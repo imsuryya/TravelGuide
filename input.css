@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: white;
+}
+
+.inputpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    color: #316FF6;
+}
+
+.title {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 120px;
+}
+
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+.maininput{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: margin 0.3s, padding 0.3s, border-color 0.3s;
+}
+
+.maininput:focus {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-color: #316FF6;
+    background-color: transparent;
+}
+
+.deploying {
+    font-family: "Bodoni Moda", serif;
+    display: inline-block;
+    padding: 15px 30px;
+    background: #316FF6;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deploying:hover, .deploying:active {
+    background-color: #245c9e;
+}
+
+.deploying:focus {
+    outline: none;
+}
+
+.deploying:active {
+    transform: translateY(2px);
+}
+
+/*------ Footer ------*/
+
+.indexfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.indexfooter hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 20px auto; 
+}
+
+.copyright {
+    margin: 10px 0; 
+}
+.myname{
+    color: black;
+}
+.myname:hover{
+    color: #316FF6;
+}
+/*------ Footer End ------*/
+
+
+/*------ Media Query  ------*/
+@media only screen and (max-width: 600px) {
+    .inputpage {
+        margin-top: 100px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .maininput {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .deploying {
+        width: 50%;
+        padding: 15px;
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .indexfooter hr {
+        width: 80%;
+    }
+}
+/*------ Media Query End ------*/
